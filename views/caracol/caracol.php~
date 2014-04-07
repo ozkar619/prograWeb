@@ -18,7 +18,7 @@
 
 	$carcol = new Caracol();
 	$rs = $carcol->consulta_datos();
-	$carcol->show_grid('*', ' ','1');
+	$carcol->show_grid('*', ' ','10');
 	//print_r($rs);
 ?>
 
