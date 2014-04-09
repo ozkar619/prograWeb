@@ -270,7 +270,7 @@ class ADODB_Pager {
 	// override this to control overall layout and formating
 	function RenderLayout($header,$grid,$footer,$attributes="class=''")
 	{
-		echo "<table  class=\"table\" ".$attributes."><tr><td>",
+		echo "<table  class=\"table\" $attributes ><tr><td>",
 				$header,
 			"</td></tr><tr><td>",
 				$grid,
