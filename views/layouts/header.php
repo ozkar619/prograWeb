@@ -35,7 +35,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Inicio</a></li>
+            <li class="active"><a href="<?php echo BASEURL; ?>/views/site/inicio.php">Inicio</a></li>
             
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tareas <b class="caret"></b></a>
@@ -50,6 +50,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Practicas <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Loteria</a></li>
+                <li><a href="<?php echo BASEURL; ?>/views/ajax/index.php">Ajax</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Examenes</li>
                 <li><a href="#">Examen 2</a></li>
