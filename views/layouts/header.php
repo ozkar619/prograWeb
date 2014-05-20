@@ -57,8 +57,25 @@
               </ul>
             </li>
 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Formularios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo BASEURL; ?>/views/06030450/datos_p.php">Datos Personales</a></li>
+                <li><a href="<?php echo BASEURL; ?>/views/06030450/datos_h.php">H medico</a></li>
+                
+              </ul>
+            </li>
 
           </ul>
+
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="<?php echo BASEURL; ?>/views/site/login.php">
+              <span class="glyphicon glyphicon-log-in"></span> Login</a>
+            </li>
+          </ul>
+
+
         </div><!--/.nav-collapse -->
       </div>
     </div>

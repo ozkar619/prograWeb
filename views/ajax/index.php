@@ -21,13 +21,13 @@
 		  <div class="panel-heading">Formulario del caracol</div>
 		  <div class="panel-body">
 		    <label for="profundidad">Profundidad</label>
-				<input type="text" name="profundidad" id="profundidad">
+				<input type="text" name="profundidad" id="profundidad" class="form-control">
 			<label for="sube">Sube</label>
-				<input type="text" name="sube" id="sube">
+				<input type="text" name="sube" id="sube" class="form-control">
 			<label for="baja">Baja</label>
-				<input type="text" name="baja" id="baja">
+				<input type="text" name="baja" id="baja" class="form-control">
 			<label for="dias">Dias</label>
-				<input type="text" name="dias" id="dias">
+				<input type="text" name="dias" id="dias" class="form-control">
 
 		  </div>
 		</div>
