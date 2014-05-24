@@ -55,7 +55,7 @@ class Usuario extends Modelo{
         return $this->baja;
     } 
     public function set_password($valor){
-        $this->password = trim($valor);
+        $this->password = trim( md5($valor) );
     }
     
 

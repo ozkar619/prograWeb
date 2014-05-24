@@ -1,4 +1,12 @@
-<?php define('BASEURL','http://localhost/prograWeb'); ?>
+<?php 
+session_start();
+if ( !isset($_SESSION['user']) ) {
+  $_SESSION['user'] = 'invitado';
+}
+define('BASEURL','http://localhost/prograWeb');
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,7 +44,9 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="<?php echo BASEURL; ?>/views/site/inicio.php">Inicio</a></li>
-            
+            <?php 
+              if ( $_SESSION['user'] != 'invitado' ):                
+            ?>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tareas <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -65,6 +75,10 @@
                 
               </ul>
             </li>
+
+            <?php 
+              endif;
+            ?>
 
           </ul>
 
