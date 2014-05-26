@@ -27,7 +27,7 @@ class Modelo extends Conexion {
 
     public function get_error($result, $tipo_error) {
         if ($result === false) {
-            die('Redireccionar a la pagina de error ' . $tipo_error);
+            die('Redireccionar a la pagina de error: '. $DB->ErrorMsg() .' '. $tipo_error);
             return false;
         } else {
             return true;

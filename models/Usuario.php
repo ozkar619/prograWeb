@@ -38,7 +38,7 @@ class Usuario extends Modelo{
         $er = new Er();
         
         if ( !$er->valida_email($valor) ){
-            $this->errores[] = "Este e-mail (".$valor.") no es vpopmail_alias_del_domain(domain)";
+            $this->errores[] = "Este e-mail (".$valor.") no es valido";
         }
 
         $rs = $this->consulta_sql("select * from usuarios where email = '$valor'");

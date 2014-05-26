@@ -1,5 +1,5 @@
 <?php 
-session_start();
+
 if ( !isset($_SESSION['user']) ) {
   $_SESSION['user'] = 'invitado';
 }
@@ -82,13 +82,26 @@ define('BASEURL','http://localhost/prograWeb');
 
           </ul>
 
+          <?php 
+              if ( $_SESSION['user'] == 'invitado' ):                
+            ?>
 
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo BASEURL; ?>/views/site/login.php">
               <span class="glyphicon glyphicon-log-in"></span> Login</a>
             </li>
           </ul>
-
+          <?php 
+              else:
+          ?>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="<?php echo BASEURL; ?>/views/site/logout.php">
+                    <span class="glyphicon glyphicon-log-in"></span> Logout</a>
+                  </li>
+                </ul>
+            <?php
+              endif;
+            ?>
 
         </div><!--/.nav-collapse -->
       </div>

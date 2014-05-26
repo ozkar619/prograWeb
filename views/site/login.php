@@ -1,4 +1,5 @@
-<?php
+<?php session_start();
+      
       include ('../../libs/adodb5/adodb-pager.inc.php');
       include ('../../libs/adodb5/adodb.inc.php');
       include ('../../models/Conexion.php');
@@ -6,7 +7,7 @@
       include ('../../models/Usuario.php');
       include ('../../controllers/siteController/LoginController.php');
       include ('../../libs/Er.php');
-      include ('../layouts/header.php');
+     
 
       $login = new LoginController();
       if (isset($_POST['email'])) {
@@ -14,7 +15,7 @@
       }
       
       
-      
+      include ('../layouts/header.php');
 ?>
 <div class="row">
 
